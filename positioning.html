@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Positioning</title>
+        <style>
+                 .blue {
+                color: white;
+                background-color:rgb(59,89,152);
+                height: 100px;
+                    /*
+                     the fixed, makes it so all other elements ignore it in the flow
+                     */
+                position: fixed;
+                     top: 30px;
+                     left: 30px;
+                z-index: 1;
+            }
+            .yellow {
+                background-image: linear-gradient(to right, black 20%, white 100%);
+                height: 100px;
+                color: #cccccc;
+                /*
+                z-index is order of appearing on top of eachother. If no z index is there, it will order with the last one coded on top
+                */
+                position: relative;
+                z-index: 0;
+            }
+            .green {
+                 background-image: linear-gradient(to left, #81209c 0%, white 100%);
+                height: 100px;
+                position: absolute;
+            }
+            .description {
+                font-family: monospace;
+                padding: 3px;
+                outline-style: solid;
+            }
+            .title {
+                padding-left:10px;
+            }
+            
+            p {
+                padding: 10px;
+            }
+        
+        </style>
+    </head>
+
+    <body>
+        <div class="blue">
+            <p><span class="title">
+                Facebook</span> <br /><br /> <span class="description">The largest social network on the planet</span></p>
+        </div>
+        
+        <div class="yellow">
+            <p><span class="title">
+                Apple</span> <br /> <br /><span class="description">Once the largest company on the planet</span></p>
+        </div>
+        
+        <div class="green">
+            <p><span class="title">
+                MicroSoft</span> <br /><br /> <span class="description">Also once the largest company on the planet</span></p>
+        </div>
+    
+    </body>
+</html>
