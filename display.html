@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Display</title>
+        
+        <style>
+            .blue {
+                color: white;
+                background-color:rgb(59,89,152);
+                height: 100px;
+                
+            }
+            .yellow {
+                background-image: linear-gradient(to right, black 20%, white 100%);
+                height: 100px;
+                color: #cccccc;
+            }
+            .green {
+                 background-image: linear-gradient(to left, #81209c 0%, white 100%);
+                height: 100px;
+            }
+            .description {
+                font-family: monospace;
+                padding: 3px;
+                outline-style: solid;
+                
+            }
+            .title {
+                padding-left:10px;
+                
+            }
+            
+            p {
+                padding: 10px;
+                display:inline;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="blue">
+            <p><span class="title">
+                Facebook</span> <br /><br /> <span class="description">The largest social network on the planet</span></p>
+            <p>Now the paragraphs are inline, not block</p>
+        </div>
+        
+        <div class="yellow">
+            <p><span class="title">
+                Apple</span> <br /> <br /><span class="description">Once the largest company on the planet</span></p>
+        </div>
+        
+        <div class="green">
+            <p><span class="title">
+                MicroSoft</span> <br /><br /> <span class="description">Also once the largest company on the planet</span></p>
+        </div>
+        
+    </body>
+
+</html>
