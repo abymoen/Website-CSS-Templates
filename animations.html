@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--webkit used because chrome needed
+    the syntax-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Animations</title>
+        <style>
+            .face {
+                height: 100px;
+                width: 100px;
+                background-color: blue;
+                color: white;
+                -webkit-animation: myanimation 3s;
+            }
+            
+            @keyframes myanimation {
+                from {background: green}
+                to {background: blue}
+            }
+            
+            .app {
+                height: 100px;
+                width: 100px;
+                background-color: #333333;
+                color: white;
+            }
+ 
+            
+            .mic {
+                height: 100px;
+                width: 100px;
+                background-color:#8e31f0;
+                color: white;
+                -webkit-animation: micanimation 3s;
+            }
+            
+                       
+            @keyframes micanimation {
+                0%{background: red;}
+                25%{background: yellow;}
+                50%{background: red; width:200px}
+                100%{background: yellow;}
+            }
+        
+        </style>
+    
+    </head>
+    <body>
+        <div class="face">
+            <p>Facebook</p>
+        </div>
+        
+        <div class="app">
+            <p>Apple</p>
+        </div>
+        
+        <div class="mic">
+            <p>Microsoft</p>
+        </div>
+    
+    
+    </body>
+
+
+
+</html>

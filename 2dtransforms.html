@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Again, some browsers will need different syntax to work properly-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>2D Transforms</title>
+        <style>
+            .face {
+                height: 100px;
+                width: 100px;
+                background-color: #3B5998;
+                transform: translate(20px, 30px)
+            }
+            
+            .app {
+                height: 100px;
+                width: 100px;
+                background-color: #333333;
+                transform: scale(1.5, 3) translate(100px, 30px) skew(10deg, 10deg);
+            }
+            
+           .mic {
+                height: 100px;
+                width: 100px;
+                background-color:#9844f3;
+                transform:rotate(30deg);
+                    
+            }
+        
+        </style>
+    
+    </head>
+    <body>
+        <div class="face">
+            <p>Facebook</p>
+        </div> 
+        
+        <div class="app">
+            <p>Apple</p>
+        </div>
+        
+        <div class="mic">
+            <p>Microsoft</p>
+        </div>
+    
+    </body>
+
+</html>
